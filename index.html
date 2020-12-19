@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>یلدا مبارک</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <audio id="myAudio">
+        <source src="AliMolaei.mp3" type="audio/mp3">
+    </audio>
+      <ul class="cloud drop">
+        <li><img src="snow.png" alt=""></li>
+        <li><img src="Pomegranate.png" alt=""></li>
+        <li><img src="heart.png" alt=""></li>
+        <li><img src="Pomegranate.png" alt=""></li>
+        <li><img src="snow.png" alt=""></li>
+        <li><img src="heart.png" alt=""></li>
+        <li><img src="Pomegranate.png" alt=""></li>
+        <li><img src="snow.png" alt=""></li>
+        <li><img src="heart.png" alt=""></li>
+      </ul>
+    <div class='section section--cards -cards-show'>
+        <div class='section--inner-cards'>
+          <div class='b__card-animated'>
+            <div class='env-wrapper'>
+              <div class='env-top'>
+                <div class='flip-btn mobile-hidden'>
+                   
+                </div>
+                <div class='env-top--frontside'>
+                  <img alt='' src='2040.png'>
+                </div>
+                <div class='env-top--backside'>
+                  <img alt='' src='env--top-backside.png'>
+                </div>
+              </div>
+              <div class='env-front'>
+                <img alt='' src='2040.portrait.back.png'>
+              </div>
+              <div class='env-card'>
+                <div class='env-card--inner'>
+                  <div class='env-card--frontside'>
+                    <img alt='' src='cart.jpg'>
+                  </div>
+                  <div class='env-card--backside'>
+                    <img alt='' src='https://s3.amazonaws.com/PM_emailer/gm_emailer_mom/card-contructor--1.jpg'>
+                    <div class='input-heading'>Your name</div>
+                    <div class='input-disclaimer'>Destination Name</div>
+                  </div>
+                </div>
+              </div>
+              <div class='env-btn js-open-env'></div>
+              <div class='backdropPostalcart'></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="display: none;" class="front">
+            <div class="firework">
+                <div class="circle circle1"></div>
+                <div class="circle circle2"></div>
+                <div class="circle circle3"></div>
+                <div class="circle circle4"></div>
+                <div class="circle circle5"></div>
+            </div>
+            <div class="firework firework2">
+                <div class="circle circle1"></div>
+                <div class="circle circle2"></div>
+                <div class="circle circle3"></div>
+                <div class="circle circle4"></div>
+                <div class="circle circle5"></div>
+            </div>
+            <div class="firework firework3">
+                <div class="circle circle1"></div>
+                <div class="circle circle2"></div>
+                <div class="circle circle3"></div>
+                <div class="circle circle4"></div>
+                <div class="circle circle5"></div>
+            </div>
+            <div class="firework firework4">
+                <div class="circle circle1"></div>
+                <div class="circle circle2"></div>
+                <div class="circle circle3"></div>
+                <div class="circle circle4"></div>
+                <div class="circle circle5"></div>
+            </div>
+            <div class="dots dot1"></div>
+            <div class="dots dot2"></div>
+            <div class="dots dot3"></div>
+            <div class="dots dot4"></div>
+            <div class="dots dot5"></div>
+            <div class="dots dot6"></div>
+            <div class="dots dot7"></div>
+            <div class="dots dot8"></div>
+     </div>
+     <div style="display: none;" class="front1">
+        <div class="firework">
+            <div class="circle circle1"></div>
+            <div class="circle circle2"></div>
+            <div class="circle circle3"></div>
+            <div class="circle circle4"></div>
+            <div class="circle circle5"></div>
+        </div>
+        <div class="firework firework2">
+            <div class="circle circle1"></div>
+            <div class="circle circle2"></div>
+            <div class="circle circle3"></div>
+            <div class="circle circle4"></div>
+            <div class="circle circle5"></div>
+        </div>
+        <div class="firework firework3">
+            <div class="circle circle1"></div>
+            <div class="circle circle2"></div>
+            <div class="circle circle3"></div>
+            <div class="circle circle4"></div>
+            <div class="circle circle5"></div>
+        </div>
+        <div class="firework firework4">
+            <div class="circle circle1"></div>
+            <div class="circle circle2"></div>
+            <div class="circle circle3"></div>
+            <div class="circle circle4"></div>
+            <div class="circle circle5"></div>
+        </div>
+        <div class="dots dot1"></div>
+        <div class="dots dot2"></div>
+        <div class="dots dot3"></div>
+        <div class="dots dot4"></div>
+        <div class="dots dot5"></div>
+        <div class="dots dot6"></div>
+        <div class="dots dot7"></div>
+        <div class="dots dot8"></div>
+ </div>
+</body>
+<script src="jquery.js"></script>
+<script>
+    (function() {
+  var flip_card, open_env;
+
+  $(".js-first-flip, .flip-btn").on("click", function() {
+    flip_card();
+    return $('.cards-btn').css({
+      opacity: 1
+    });
+  });
+
+  $(".js-open-env").on("click", function() {
+    return open_env();
+  });
+
+  flip_card = function() {
+    return $(".env-card--inner").toggleClass("is-flipped");
+  };
+
+  open_env = function() {
+    $(".section--cards").addClass("is-opened");
+     
+  };
+
+}).call(this);
+</script>
+<script>
+            
+            var x = document.getElementById("myAudio"); 
+
+             $('.env-btn').click(function(){
+                x.play(); 
+             })
+             
+            
+</script>
+<script>
+$('.env-btn').click(function(){
+                
+                $('.front1').fadeIn(1500)
+                $('.front').fadeIn(3000)
+             })
+</script>
+</html>
