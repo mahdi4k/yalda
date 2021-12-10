@@ -10,7 +10,9 @@ body {
 .gradient-text {
   color: #b39a5d;
 }
-
+.slick-prev , .slick-next{
+  display: none !important;
+}
 .backgroundcliptext .gradient-text {
   background: linear-gradient(45deg, #b39a5d 0%, #c9bb9d 25%, #b39a5d 50%, #c9bb9d 100%);
   -webkit-background-clip: text;
@@ -18,7 +20,24 @@ body {
   background-clip: text;
   text-fill-color: transparent;
 }
+.slider{
+  position: absolute !important;
+    top: 0;
+    opacity: 0;
+}
+.slider {
+  margin: 0 auto;
+  width: 100vh;
+  height: 100vh;
+}
 
+
+.slider img {
+  width: 100vh;
+  height: 100vh;
+  object-fit: cover !important;
+  object-position: center !important;
+}
 .img-responsive {
   max-width: 100%;
   display: block;
